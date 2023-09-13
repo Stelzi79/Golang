@@ -3,31 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	// var nameOne string = "mario"
-	// var nameTwo = "luigi"
-	// var nameThree string
+	age := 20
+	name := "joe"
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	fmt.Print("hello, ")
+	fmt.Print("world! \n")
+	fmt.Print("new line \n")
 
-	// nameOne = "peach"
-	// nameThree = "bowser"
+	fmt.Printf("my age is %v and my name is %v \n", age, name)
+	fmt.Printf("my age is %q and my name is %q \n", age, name)
+	fmt.Printf("age is of type %T \n", age)
+	fmt.Printf("you scored %0.1f points! \n", 225.55)
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
+	fmt.Println("the str is: ", str)
 
-	// nameFour := "yoshi"
-	// fmt.Println(nameFour)
-
-	var ageOne int = 20
-	var ageTwo = 30
-	ageThree := 40
-
-	fmt.Println(ageOne, ageTwo, ageThree)
-
-	// var numOne int8 = 25
-	// var numTwo int8 = -128
-	// var numThree uint8 = 255
-
-	var scoreOne float32 = 25.98
-	var scoreTwo float64 = 356789.12345
-	scoreThree := 1.5
 }
