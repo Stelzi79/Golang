@@ -1,32 +1,34 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	//var ages [3]int = [3]int{20, 25, 30}
-	var ages = [3]int{20, 25, 30}
+	// greeting := "hello there friends!"
 
-	names := [4]string{"Yoshi", "Mario", "Peach", "Bowser"}
-	names[1] = "Luigi"
+	// fmt.Println(strings.Contains(greeting, "hello"))
+	// fmt.Println(strings.ReplaceAll(greeting, "hello", "hi"))
+	// fmt.Println(strings.ToUpper(greeting))
+	// fmt.Println(strings.Index(greeting, "th"))
+	// fmt.Println(strings.Split(greeting, " "))
 
-	fmt.Println(ages, len(ages))
-	fmt.Println(names, len(names))
+	// the original string is not modified
+	// fmt.Println("Original string value: ", greeting)
 
-	// Slices (use arrays under the hood)
-	var scores = []int{100, 50, 60}
-	scores[2] = 25
-	scores = append(scores, 85)
+	ages := []int{45, 20, 35, 30, 75, 60, 50, 25}
 
-	fmt.Println(scores, len(scores))
+	sort.Ints(ages)
+	fmt.Println(ages)
 
-	// Slice ranges
-	rangeOne := names[1:3]
-	rangeTwo := names[2:]
-	rangeThree := names[:3]
+	index := sort.SearchInts(ages, 30)
+	fmt.Println(index)
 
-	fmt.Println(rangeOne, rangeTwo, rangeThree)
+	names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
+	sort.Strings(names)
+	fmt.Println(names)
 
-	rangeOne = append(rangeOne, "Koopa")
-	fmt.Println(rangeOne)
+	fmt.Println(sort.SearchStrings(names, "bowser"))
 
 }
