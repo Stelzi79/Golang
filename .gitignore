@@ -2,6 +2,7 @@
 *.o
 *.a
 *.so
+main
 
 # Folders
 _obj
@@ -12,6 +13,7 @@ _test
 [568vq].out
 
 # Temp files
+
 *~
 *.exe
 *.test
