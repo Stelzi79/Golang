@@ -48,6 +48,5 @@ func main() {
 	println(color.MagentaString("This is Purple"))
 	println(color.CyanString("This is Cyan"))
 
-
 	app.Run(os.Args)
 }

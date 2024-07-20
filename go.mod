@@ -1,4 +1,4 @@
-module main
+module github.com/Stelzi79/Golang/main
 
 go 1.22.2
 
