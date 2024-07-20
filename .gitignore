@@ -2,11 +2,12 @@
 *.o
 *.a
 *.so
-main
 
 # Folders
 _obj
 _test
+out
+bin
 
 # Architecture specific extensions/prefixes
 *.[568vq]
